@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  node-app:
+    build: .
+    image: camdigikey-app-dev
+    ports:
+      - '9000:9000'

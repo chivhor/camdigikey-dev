@@ -1,0 +1,22 @@
+{
+  "name": "camdx-camdigikey-client-library-app-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Techo Startup Center",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d",
+    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d"
+  },
+  "dependencies": {
+    "camdigikey-client": "./camdigikey-client-library-node",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
